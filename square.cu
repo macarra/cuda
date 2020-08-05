@@ -2,7 +2,7 @@
 
 __global__ void square(float *d_out, float *d_in) {
     int idx = threadIdx.x;
-    floatf = d_in[idx];
+    float f = d_in[idx];
     d_out[idx] = f * f;
 }
 
@@ -12,7 +12,7 @@ int main(int argc, char ** argv) {
    const int ARRAY_BYTES = ARRAY_SIZE * sizeof(float);
    
    // generate the input array on the host
-   float h_in(ARRAY_SIZE];
+   float h_in(ARRAY_SIZE);
    for (int i = 0; i < ARRAY_SIZE; i++) {
       h_in[i] = float(i);
    }
@@ -41,7 +41,7 @@ int main(int argc, char ** argv) {
       printf(((i%4) != 3) ? "\t" : "\n");
    }
    
-   // free GPU memore allocation
+   // free GPU memory allocation
    cudaFree(d_in);
    cudaFree(d_out);
    
