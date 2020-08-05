@@ -1,5 +1,6 @@
 #!/bin/env python3
 from numba import cuda
+import matplotlib.pyplot as P
 import numpy as np
 import time
 
@@ -50,4 +51,4 @@ dt = time.time() - start
 
 print("Mandelbrot created on GPU in",dt,"seconds")
 
-imshow(gimage)
+P.imshow(gimage)
