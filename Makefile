@@ -20,5 +20,5 @@ cube:  cube.cu
 	./bin/cube	
 
 atomictest: atomictest.cu 
-	nvcc atomictest.cu I./include -o ./bin/atomictest
+	nvcc atomictest.cu -I./include -o ./bin/atomictest
 	./bin/atomictest
