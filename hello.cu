@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define NUM_BLOCKS 156
+#define NUM_BLOCKS 16
 #define BLOCK_WIDTH 1
 
 __global__ void hello()
