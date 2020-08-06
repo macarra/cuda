@@ -3,4 +3,4 @@ storage
 __pycache__
 .ipynb_checkpoints
 cs344
-bin
+bin/*
