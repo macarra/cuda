@@ -19,6 +19,6 @@ cube:  cube.cu
 	nvcc cube.cu -o ./bin/cube
 	./bin/cube	
 
-atomictest: atomictest.cu gputimer.h
+atomictest: atomictest.cu 
 	nvcc atomictest.cu I./include -o ./bin/atomictest
 	./bin/atomictest
