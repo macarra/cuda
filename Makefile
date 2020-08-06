@@ -18,4 +18,7 @@ square:  square.cu
 cube:  cube.cu
 	nvcc cube.cu -o ./bin/cube
 	./bin/cube	
-	
+
+atomictest: atomictest.cu
+	nvcc atomictest.cu -o ./bin/atomictest
+	./bin/atomictest
