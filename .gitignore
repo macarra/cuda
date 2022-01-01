@@ -1,7 +1,1 @@
-datasets
-storage
-__pycache__
-.ipynb_checkpoints
-cs344
-bin/*
-gitpush.csh
+samples/*
